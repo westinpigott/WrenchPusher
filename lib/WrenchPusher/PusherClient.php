@@ -105,7 +105,6 @@ class PusherClient extends Client {
     }
 
     protected function isTimeToKeepAlive() {
-        echo $this->keepAliveDuration.':'.(microtime(true) - $this->lastConnectionTime);
         return ((microtime(true) - $this->lastConnectionTime) > $this->keepAliveDuration);
     }
 
