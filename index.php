@@ -7,8 +7,11 @@ $classLoader->register();
 $classLoader = new SplClassLoader('Wrench', 'vendor/Wrench/lib');
 $classLoader->register();
 
+//enter your ap key here.
+define('APP_KEY', 'XXXXXXXXXXXXX');
+
 //create the pusher connection
-$client = new WrenchPusher\PusherClient('7e03c5482047aa273663', array(
+$client = new WrenchPusher\PusherClient(APP_KEY, array(
             'isSecure' => TRUE,
             'keepAliveDuration' => 5,
         ));
