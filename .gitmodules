@@ -1,3 +1,6 @@
 [submodule "vendor/php-websocket"]
 	path = vendor/php-websocket
 	url = git://github.com/nicokaiser/php-websocket.git
+[submodule "vendor/Wrench"]
+	path = vendor/Wrench
+	url = git://github.com/varspool/Wrench.git
